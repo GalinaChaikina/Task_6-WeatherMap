@@ -1,0 +1,126 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.conteiner {
+    max-width: 1600px;
+    height: 750px;
+    position: relative;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+#weather {
+    position: absolute;
+    top: 10px;
+    left: 400px;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 450px;
+    height: 210px;
+    margin: 0 auto;
+    opacity: 0.7;
+}
+
+.weather_loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather_loading img {
+    max-width: 50px;
+}
+
+.weather_header {
+    display: flex;
+}
+
+.weather_main {
+    flex: 1 1 auto;
+}
+
+.weather_city {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.weather_status {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.weather_icon img {
+    width: 120px;
+    height: 115px;
+}
+
+.weather_temp {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.weather_temp::after,
+.weather_feels_like::after {
+    display: inline-block;
+    margin-left: 5px;
+    content: '°C';
+}
+
+.weather_descryption {
+    display: flex;
+}
+
+.weather_basic {
+    padding-right: 20px;
+}
+
+.now_data {
+    margin-top: 25px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+#quote {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 750px;
+    opacity: 0.7;
+}
+
+#quoteText {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#quoteAuthor {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+#next {
+    background: gray;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
